@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+:root {
+  --success: #68b0ab;
+  --error: #9e2a5ab9;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+}
+
+body {
+  font-family: "Architects Daughter", cursive;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  background-color: #ecf4f3;
+  border-radius: 7px;
+  width: 410px;
+  box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  margin: 0 1rem 1.2rem;
+  color: #014e54;
+  display: inline-block;
+  margin-top: 0.9rem;
+}
+
+#flower {
+  width: 20%;
+  float:left;
+}
+
+.form {
+  padding: 2rem 3rem;
+}
+
+.frm_val {
+  margin-bottom: 1rem;
+  padding-bottom: 1.3rem;
+  position: relative;
+}
+
+.frm_val label {
+  display: block;
+  color: #014e54;
+  margin-bottom: 0.5rem;
+  margin-top: 1.1rem;
+}
+
+.frm_val input {
+  border: 1px solid rgb(116, 110, 110);
+  border-radius: 3px;
+  display: block;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: "Indie Flower", cursive;
+  width: 100%;
+}
+
+.frm_val input:focus {
+  border-color: rgb(55, 41, 41);
+}
+
+.frm_val span {
+  color: var(--error);
+}
+
+.frm_val.success input {
+  border-color: var(--success);
+}
+
+.frm_val.error input {
+  border-color: var(--error);
+}
+
+.frm_val span {
+  color: var(--error);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.frm_val.error span {
+  visibility: visible;
+}
+
+.form button {
+  cursor: pointer;
+  background-color: #1c7379;
+  border: 2px solid #03848d;
+  color: seashell;
+  font-size: 1.1rem;
+  display: block;
+  border-radius: 0.3rem;
+  width: 100%;
+  padding: 0.4rem;
+  margin-top: 2rem;
+  font-family: "Architects Daughter", cursive;
+}
